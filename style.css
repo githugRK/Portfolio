@@ -163,14 +163,12 @@ body{
     width: 370px; /* Adjust the size as needed */
     height: 370px; /* Adjust the size as needed */
     border-radius: 50%; /* This makes the image circular */
-    border: 7px solid #00eeff; /* Adjust the border size and color as needed */
+    border: 5px solid #6d77e3; /* Adjust the border size and color as needed */
     object-fit: cover; /* Ensures the image covers the frame properly */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adds a shadow for depth */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Adds a shadow for depth */
     transition: transform 0.3s ease; /* Smooth transition for hover effect */
     margin-left: 130px;
     margin-top: -40px;
-    background: radial-gradient(circle, #ff00f2, transparent);
-    z-index: -1;
 }
 .about-text h2{
     font-size: 60px;
