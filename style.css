@@ -12,12 +12,12 @@ body{
 .header{
     position: fixed;
     top: 0;
-    left: 0;
+    left: 100;
     width: 100%;
     padding: 20px 10px;
     background: #051129;
     /* background: #008080; */
-    display: flex;
+    display:flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
@@ -34,13 +34,21 @@ body{
     opacity: 0;
     animation: slideRight 1s ease forwards;
 }
+
+.navbar{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .navbar a{
     display: inline-block;
-    font-size: 25px;
+    font-size: 20px;
     color: #fff;
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
     transition: .3s;
     opacity: 0;
     animation: slideTop .5s ease forwards;
@@ -49,6 +57,7 @@ body{
 .navbar a:hover{
     color: #0ef;
 }
+
 .home{
     position: relative;
     width: 100%;
@@ -117,7 +126,7 @@ body{
 .home-sci a:hover{
     background: #0ef;
     color: #081b29;
-    box-shadow: 0 0 20px #0ef;
+    box-shadow: 0 0 10px #0ef;
 }
 .btn-box{
     display: inline-block;
@@ -146,13 +155,22 @@ body{
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 1.5rem;
+    padding-top: 100px; /* Adjust based on your fixed header's height */
+    margin-top: -100px; /* Same value as padding-top but negative */
+    scroll-margin-top: 100px; /* Provides space above the section for browsers supporting scroll-margin-top */
 }
-.about-img img{
-    padding-bottom: 20%;
-    max-width: 630px;
-    height: auto;
-    width: 100%;
-    border-radius: 8px;
+.about-img img {
+    width: 370px; /* Adjust the size as needed */
+    height: 370px; /* Adjust the size as needed */
+    border-radius: 50%; /* This makes the image circular */
+    border: 7px solid #00eeff; /* Adjust the border size and color as needed */
+    object-fit: cover; /* Ensures the image covers the frame properly */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adds a shadow for depth */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+    margin-left: 130px;
+    margin-top: -40px;
+    background: radial-gradient(circle, #ff00f2, transparent);
+    z-index: -1;
 }
 .about-text h2{
     font-size: 60px;
@@ -171,7 +189,8 @@ body{
     color: aliceblue;
     font-size: 20px;
     line-height: 1.4;
-    margin-bottom: 4rem
+    margin-bottom: 4rem;
+    margin-right: 25px;
 }
 #services{
     color: aliceblue;
@@ -226,23 +245,22 @@ body{
 .read{
     display: inline-block;
     padding: 12px 28px;
-    background: #0ef;
+    background: rgb(144, 218, 224);
     border-radius: 40px;
-    font-size: 16px;
+    font-size: 20px;
     color: #001b29;
     letter-spacing: 1px;
     text-decoration: none;
-    font-weight: 600;
-    opacity: 0;
+    font-weight: 750;
     animation: slideTop 1s ease forwards;
     animation-delay: 2s;
-    box-shadow: 0 0 5px #0ef,
-    0 0 25px #0ef;
+    box-shadow: 0 0 1px #0ef,
+    0 0 5px #0ef;
 }
 .read:hover{
     background: #0ef;
     color: #081b29;
-    box-shadow: 0 0 20px #0ef;
+    box-shadow: 0 0 10px #0ef;
 }
 .services-list div:hover{
     transform: translateY(-10px);
@@ -319,7 +337,13 @@ section{
     width: 70%;
 }
 .progress-line.java span{
-    width: 65%;
+    width: 75%;
+}
+.progress-line.python span{
+    width: 70%
+}
+.progress-line.sql span{
+    width: 60%;
 }
 .progress-line.react span{
     width: 50%;
@@ -346,8 +370,14 @@ section{
     content: "70%";
 }
 .progress-line.java span::after{
-    content: "65%";
+    content: "75%";
 }
+.progress-line.python span::after{
+    content: "70%";
+}
+.progress-line.sql span::after{
+    content: "60%";
+} 
 .progress-line.react span::after{
     content: "50%";
 }

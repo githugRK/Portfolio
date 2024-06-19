@@ -6,6 +6,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
 <body>
@@ -17,43 +18,42 @@
             <a href="#about" style="--i:2">About</a>
             <a href="#services" style="--i:3">Skills</a>
             <a href="#skills" style="--i:4">Portfolio</a>
-            <a href="#contact" style="--i:5">Contact</a>
+            <a href="#projects" style="--i:5">Projects</a>
+            <a href="#contact" style="--i:6">Contact</a>
         </nav>
     </header>
     <section class="home" id="home">
         <div class="home-content">
-            <h3>Hello, It's Me</h3>
-            <h1>Rama Krishna Bandi</h1>
-            <h3>And I'm a <span class="text"></span></h3>
-            <p>I'm a Full Stack Developer. <br/>
+            <h3>Hi There</h3><br>
+            <h2>I'm <span class="text" style="color: #00eeff;"></span></h2><br>
+            <p>I'm a Full Stack Developer.
                 My first exposure to professional life through internship has benefited me mostly in
                 strengthening my personal skills. I have developed a positive attitude and a strong
                 sense of responsibility being innovative , resourceful, open and responsive to change. It has
                 created in me an interest in lifelong learning.
             </p>
             <div class="home-scl">
-                <a href="#" style="--i:7"><i class='bx bxl-facebook'></i></a>
                 <a href="#" style="--i:8"><i class='bx bxl-instagram' ></i></a>
                 <a href="#" style="--i:9"><i class='bx bxl-whatsapp' ></i></a>
                 <a href="#" style="--i:10"><i class='bx bxl-linkedin' ></i></a>
             </div>
-            <a href="#" class="btn-box">More About Me</a>
+            <a href="#about" class="btn-box" style="--i:2">More About Me</a>
         </div>
         <span class="home-imgHover"></span>
     </section>
 
     <section class="about" id="about">
         <div class="about-img">
-            <img src="./images/About.png" alt="">
+            <img src="./images/Screenshot (72).png" alt="">
         </div>
         <div class="about-text">
             <h2>About <span>Me</span></h2>
             <h4>Full Stack Developer!</h4>
             <p>
                 I'm Rama Krisihna Bandi & I'm from Narasaraopet. I'm an engineering graduate from JNTUK UCEN College specialized in Computer Science. I've worked hard in my education & maintained a CGPA of 8.1.
-                Along with my degree I've completed Java, SQL and Full Stack Courses online.Now I'm ready to apply my knowledge into practice.Though I do not have any real life working experience, I've  had a lot of exposure to the software field.
-                My Goal is to build a successfull career as a Full Stack Developer.Moving forward in my career I hope to expand my experience across different industries.
-                I'm a good learner and team player
+                Along with my degree I've completed Java, SQL and Full Stack Courses. Now I'm ready to apply my knowledge into practice. Though I do not have any real life working experience, I've  had a lot of exposure to the software field.
+                My Goal is to build a successfull career as a Full Stack Developer. Moving forward in my career I hope to expand my experience across different industries.
+                I'm a fast learner and great team player.
                 That's all about my self.
                 <!-- My first exposure to professional life through internship has benefited me mostly in
                 strengthening my personal skills. I have developed a positive attitude and a strong
@@ -61,42 +61,49 @@
                 created in me an interest in lifelong learning.
                 I'm attentive listener and effective oral communication skill -->
             </p>
-            <a href="#" class="btn-box">More About Me</a>
         </div>
     </section>
 
     <section>
         <div class="services" id="services">
             <div class="container">
-                <h1 class="sub-title">My <span>Skiils</span></h1>
-                <div class="services-list">
+                <h1 class="sub-title">My <span>Skills</span></h1>
+                <h3 class="title">Course Completion Certificates</h3>
+                <div class="services-list" style="display: flex;">
                     <div>
                         <i class='bx bx-code-alt'></i>
-                        <h2>Full Stack Developer</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam perspiciatis fugit debitis laudantium, sed numquam neque at, praesentium exercitationem culpa ipsam? Nihil.
+                        <h2>MERN Stack Developer</h2>
+                        <p>Acquired proficiency in building full-stack web applications with MongoDB, Express.js, React.js, and Node.js.
                         </p>
-                        <a href="#" class="read">Learn More</a>
+                        <a href="#" class="read">View Certificate</a>
                     </div>
                     <div>
-                        <i class='bx bxl-java' style='color:#00eeff'></i>
-                        <h2>Java</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam perspiciatis fugit debitis laudantium, sed numquam neque at, praesentium exercitationem culpa ipsam? Nihil.
+                        <i class="fas fa-robot" style="color:#00eeff;"></i>
+                        <h2>Artificial Intelligence</h2>
+                        <p>Gained hands-on experience in AI concepts and applications, focusing on standard ML algorithms Regression,
+                            Classification, and Clustering.
                         </p>
-                        <a href="#" class="read">Learn More</a>
+                        <a href="#" class="read">View Certificate</a>
                     </div>
                     <div>
-                        <i class='bx bxl-react' style='color:#00eeff'></i>
-                        <h2>React</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam perspiciatis fugit debitis laudantium, sed numquam neque at, praesentium exercitationem culpa ipsam? Nihil.
+                        <i class="fas fa-chart-line" style="color:#00eeff;"></i>
+                        <h2>Data Science</h2>
+                        <p>Mastered essential techniques in data analysis and visualization using NLTK and NLP.
                         </p>
-                        <a href="#" class="read">Learn More</a>
+                        <a href="#" class="read">View Certificate</a>
+                    </div>
+                    <div>
+                        <i class='bx bxl-python' style='color:#00eeff'></i>
+                        <h2>Python</h2>
+                        <p>Developed foundational skills in Python programming and application development.
+                        </p>
+                        <a href="#" class="read">View Certificate</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <h1 class="sub-title">My <span>Skills</span></h1>
 
     <section>
         <div class="container1" id="skills">
@@ -127,27 +134,44 @@
                         <span></span>
                     </div>
                 </div><br/>
-                <div class="bar"><i style="color: #c32ec9" class='bx bxl-java'></i>
-                    <div class="info">
-                        <span>Java</span>
-                    </div>
-                    <div class="progress-line java">
-                        <span></span>
-                    </div>
-                </div><br/>
-                <div class="bar"><i style="color: #69bcbc" class='bx bxl-react'></i>
+                <div class="bar"><i style="color: #c32ec9" class='bx bxl-react'></i>
                     <div class="info">
                         <span>React</span>
                     </div>
                     <div class="progress-line react">
+                        <span></span>
+                    </div>
+                </div><br/>
+                <div class="bar"><i style="color: #69bcbc" class='bx bxl-java'></i>
+                    <div class="info">
+                        <span>Java</span>
+                    </div>
+                    <div class="progress-line java">
+                        <span> </span>
+                    </div><br>
+                </div>
+                <div class="bar"><i style="color: #0a087a" class='bx bxl-python'></i>
+                    <div class="info">
+                        <span>Python</span>
+                    </div>
+                    <div class="progress-line python">
                         <span> </span>
                     </div>
+                </div><br/>
+                <div class="bar"><i style="color: #69bcbc" class='bx bxl-sql'></i>
+                    <div class="info">
+                        <span>SQL</span>
+                    </div>
+                    <div class="progress-line sql">
+                        <span> </span>
+                    </div><br>
                 </div>
+
             </div>
         </div>
 
         <div class="container1">
-            <h1 class="heading1">Professional Skills</h1>
+            <h1 class="heading1">Professional Skills</h1><br><br><br><br>
             <div class="radial-bars">
 
              <div class="radial-bar">
